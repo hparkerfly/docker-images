@@ -6,7 +6,7 @@ ADD ./start-kafka.sh /scripts/
 # install java + others
 RUN apt-get update && apt-get install -y \
   wget \
-  vim \
+  nano \
   openjdk-8-jdk
 
 # install kafka
