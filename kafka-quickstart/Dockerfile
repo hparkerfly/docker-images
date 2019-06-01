@@ -10,8 +10,8 @@ RUN apt-get update && apt-get install -y \
   openjdk-8-jdk
 
 # install kafka
-RUN wget http://apache.cs.utah.edu/kafka/0.10.2.0/kafka_2.11-0.10.2.0.tgz && \
-  tar -xzf kafka_2.11-0.10.2.0.tgz && \
-  mv kafka_2.11-0.10.2.0 $KAFKA_HOME
+RUN wget http://apache.cs.utah.edu/kafka/2.2.0/kafka_2.12-2.2.0.tgz && \
+  tar -xzf kafka_2.12-2.2.0.tgz && \
+  mv kafka_2.12-2.2.0 $KAFKA_HOME
 
 CMD ["/scripts/start-kafka.sh"]
